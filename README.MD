@@ -1,5 +1,7 @@
+
 # Country Info
 > This application allows you to search a country, language, and currency once you enter this it will also show the corresponding region.
+>
 ## API Used
 ```python
 url_countries = 'https://restcountries.eu/rest/v2/all'
@@ -8,7 +10,30 @@ url_currency = 'https://restcountries.eu/rest/v2/currency/{currency}'
 url_lang = 'https://restcountries.eu/rest/v2/lang/{et}'
 ```
 
+
 ## Code Explanation
+	Open the command line and direct to where the app is
+	Next create a virtual environment:
+
+	python3 -m venv name_of_project
+	source name_of_project/bin/activate
+
+	You then need to activate the virtual environment using this command:
+	source name_of_project/bin/activate
+
+	From app directory run this:
+	python -m pip install -U -r requirements.txt
+
+	To run the app use the following command:
+	python cloud.py
+
+	If there are no errors then a link will appear on the terminal, clicking on this   will then take you to the the website:
+
+	 * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+	 * Restarting with stat
+	 * Debugger is active!
+	 * Debugger PIN: 151-572-586
+
 
 ```python
 	# This route is the initial route that the user goes to login.
@@ -22,7 +47,7 @@ url_lang = 'https://restcountries.eu/rest/v2/lang/{et}'
 
 	# We take the password from the request and cross reference it with the password that we already have
     hash(request.form['password'])
-	
+
 	# The error code that appears when the page does not exist, in our example this would be the case when a invalid country is entered.
 	if response.status_code == 404:
 
