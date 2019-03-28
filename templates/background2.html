@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LANGUAGE</title>
+  </head>
+  <body style ="background-color:powderblue;" >
+    <table>
+      <tr>
+        <th>The following countries speak the language entered</th>
+      </tr>
+      {% for value in result %}
+      <tr>
+        <td>{{value.name}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

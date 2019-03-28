@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my app</title>
+  </head>
+  <body>
+    <form class="" action="{{url_for('all_countries')}}" method="post">
+      <button type="submit" name="button">List</button>
+    </form>
+    <form class="" action="{{url_for('name_country')}}" method="post">
+      Search by name: <input type="text" name="name" value="">
+      <button type="submit" name="button">Enter</button>
+    </form>
+    <form class="" action="{{url_for('currency')}}" method="post">
+      Search by currency: <input type="text" name="currency" value="">
+      <button type="submit" name="button">Enter</button>
+    </form>
+    <form class="" action="{{url_for('language')}}" method="post">
+      Search by language: <input type="text" name="language" value="">
+      <button type="submit" name="button">Enter</button>
+    </form>
+  </body>
+</html>

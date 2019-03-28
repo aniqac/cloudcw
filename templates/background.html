@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COUNTRY</title>
+  </head>
+  <form class="" action="{{url_for('home')}}" method="post">
+    <button type="submit" name="button">Home</button>
+  </form>
+  <body style ="background-color:powderblue;" >
+    <h1>List of countries based on {{par}}</h1>
+    <table>
+      <tr>
+        <th>Name of Country</th>
+        <th>Reg</th>
+      </tr>
+      {% for value in result %}
+      <tr>
+        <td>{{value.name}}</td>
+        <td>{{value.region}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

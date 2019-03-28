@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HELLO</title>
+  </head>
+  <body>
+    <form class="" action="{{url_for('home')}}" method="post">
+      <button type="submit" name="button">Home</button>
+    </form>
+    <table>
+      <tr>
+        <th>Country List</th>
+      </tr>
+      {% for value in result %}
+      <tr>
+        <td>{{value.name}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CURRENCY</title>
+  </head>
+  <body style ="background-color:powderblue;" >
+    <table>
+      <tr>
+        <th>The currency is used in the following countries</th>
+      </tr>
+      {% for value in result %}
+      <tr>
+        <td>{{value.name}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

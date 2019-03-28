@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Flask Intro - Signup Page</title>
+    {% if error %}
+       <p class="error"><strong>Error:</strong> {{ error}}
+    {% endif %}
+  </head>
+  <body style ="background-color:powderblue;" >
+      <h2>Sign up!</h2>
+      <br>
+      <form action="" method="post">
+        Username:<input type ="text" placeholder="Username" name="username">
+         Password:<input type="password" placeholder="Password" name="password">
+        <button class="btn btn-default" type="submit" value="Signup">Signup</button>
+      </form>
+
+   </body>
+</html>
