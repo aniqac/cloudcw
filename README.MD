@@ -1,7 +1,7 @@
 
 
 # Country Info
-> This application allows you to search a country, language, and currency once you enter this it will also show the corresponding region. The external IP is 34.65.42.244 
+> This application allows you to search a country, language, and currency. It then shows you which country for example speaks that language or uses the currency it will also show the corresponding region. The external IP is 34.65.42.244 
 >
 ## API Used
 ```python
